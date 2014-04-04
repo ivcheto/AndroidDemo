@@ -1,0 +1,11 @@
+.gitignore~
+app/app.iml
+.idea/
+App1.iml
+gradle/
+gradlew
+gradlew.bat
+.gradle
+/local.properties
+/.idea/workspace.xml
+.DS_Store
