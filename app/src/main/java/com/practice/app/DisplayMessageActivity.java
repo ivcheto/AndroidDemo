@@ -19,13 +19,7 @@ public class DisplayMessageActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_display_message);
-
-        if (savedInstanceState == null) {
-//            getSupportFragmentManager().beginTransaction()
-//                    .add(R.id.container, new PlaceholderFragment())
-//                    .commit();
-        }
+        setContentView(R.layout.activity_display_message);
 
         ListView listView = (ListView)findViewById(R.id.items_list);
         Intent intent = getIntent();
@@ -66,7 +60,7 @@ public class DisplayMessageActivity extends ActionBarActivity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                 Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_display_message, container, false);
+            View rootView = inflater.inflate(R.layout.activity_display_message, container, false);
             return rootView;
         }
     }
